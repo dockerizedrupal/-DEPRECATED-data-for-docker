@@ -1,1 +1,5 @@
 # docker-data
+
+## License
+
+**MIT**

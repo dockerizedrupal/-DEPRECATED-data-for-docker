@@ -1,6 +1,10 @@
 # docker-data-dev
 
-## Run the container
+A data-only [Docker](https://docker.com/) container.
+
+## Data (DEVELOPMENT BRANCH)
+
+### Run the container
 
 Using the `docker` command:
 
@@ -18,7 +22,7 @@ Using the `fig` command
       && git checkout dev \
       && fig up
 
-## Build the image
+### Build the image
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \

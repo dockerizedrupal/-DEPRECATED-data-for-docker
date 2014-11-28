@@ -19,7 +19,7 @@ Using the `fig` command
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \
       && cd "${TMP}" \
-      && fig up
+      && sudo fig up
 
 ### Build the image
 
@@ -29,35 +29,6 @@ Using the `fig` command
       && sudo docker build -t simpledrupalcloud/data:latest . \
       && cd -
 
-## Data (DEVELOPMENT BRANCH)
-
-### Run the container
-
-Using the `docker` command:
-
-    CONTAINER="data" && sudo docker run \
-      --name "${CONTAINER}" \
-      -h "${CONTAINER}" \
-      -v /data \
-      simpledrupalcloud/data:dev
-      
-Using the `fig` command
-
-    TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \
-      && cd "${TMP}" \
-      && git checkout dev \
-      && sudo fig up
-
-### Build the image
-
-    TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \
-      && cd "${TMP}" \
-      && git checkout dev \
-      && sudo docker build -t simpledrupalcloud/data:dev . \
-      && cd -
-      
 ## License
 
 **MIT**

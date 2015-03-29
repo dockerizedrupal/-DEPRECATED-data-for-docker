@@ -1,5 +1,5 @@
 data:
-  image: viljaste/data:latest
+  image: viljaste/data:dev
   hostname: data
   volumes:
     - /data

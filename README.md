@@ -10,7 +10,7 @@ Using the `docker` command:
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -v /data \
-      simpledrupalcloud/data:dev
+      viljaste/data:dev
       
 Using the `fig` command
 
@@ -26,7 +26,7 @@ Using the `fig` command
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout dev \
-      && sudo docker build -t simpledrupalcloud/data:dev . \
+      && sudo docker build -t viljaste/data:dev . \
       && cd -
 
 ## License

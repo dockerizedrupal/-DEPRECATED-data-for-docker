@@ -1,5 +1,5 @@
 FROM busybox:latest
 
-MAINTAINER Simple Drupal Cloud <support@simpledrupalcloud.com>
+MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
 CMD ["true"]

@@ -1,5 +1,5 @@
 data:
-  image: simpledrupalcloud/data:dev
+  image: viljaste/data:latest
   hostname: data
   volumes:
     - /data

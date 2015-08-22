@@ -1,5 +1,5 @@
 data:
-  image: viljaste/data:latest
+  image: dockerizedrupal/data:latest
   hostname: data
   volumes:
     - /data

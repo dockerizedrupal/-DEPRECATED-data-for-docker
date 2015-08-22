@@ -1,6 +1,6 @@
 # docker-data
 
-A data-only [Docker](https://docker.com/) container.
+A data-only container.
 
 ## Run the container
 
@@ -10,23 +10,21 @@ Using the `docker` command:
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -v /data \
-      viljaste/data:latest
+      dockerizedrupal/data:latest
       
 Using the `fig` command
 
     TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/docker-data.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout dev \
-      && sudo fig up
+      && sudo docker-compose up
 
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-data.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/docker-data.git"${TMP}" \
       && cd "${TMP}" \
-      && git checkout dev \
-      && sudo docker build -t viljaste/data:latest . \
+      && sudo docker build -t dockerizedrupal/data:latest . \
       && cd -
 
 ## License

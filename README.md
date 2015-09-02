@@ -10,9 +10,9 @@ Using the `docker` command:
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -v /data \
-      dockerizedrupal/data:latest
+      dockerizedrupal/data:1.0.1
       
-Using the `fig` command
+Using the `docker-compose` command
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-data.git "${TMP}" \
@@ -22,9 +22,10 @@ Using the `fig` command
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone https://github.com/dockerizedrupal/docker-data.git"${TMP}" \
+      && git clone https://github.com/dockerizedrupal/docker-data.git "${TMP}" \
       && cd "${TMP}" \
-      && sudo docker build -t dockerizedrupal/data:latest . \
+      $$ git checkout 1.0.1 \
+      && sudo docker build -t dockerizedrupal/data:1.0.1 . \
       && cd -
 
 ## License

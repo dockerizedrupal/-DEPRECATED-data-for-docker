@@ -1,5 +1,5 @@
 data:
-  image: dockerizedrupal/data:1.0.1
+  image: dockerizedrupal/data:1.0.2
   hostname: data
   volumes:
     - /data

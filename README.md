@@ -1,6 +1,6 @@
 # docker-data
 
-A data-only container.
+A Docker image to create data-only containers for [Dockerized Drupal](https://dockerizedrupal.com/) project.
 
 ## Run the container
 
@@ -8,15 +8,15 @@ A data-only container.
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -v /data \
-      dockerizedrupal/data:1.0.4
+      dockerizedrupal/data:1.0.5
       
 ## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-data.git "${TMP}" \
       && cd "${TMP}" \
-      $$ git checkout 1.0.4 \
-      && sudo docker build -t dockerizedrupal/data:1.0.4 . \
+      $$ git checkout 1.0.5 \
+      && sudo docker build -t dockerizedrupal/data:1.0.5 . \
       && cd -
 
 ## License

@@ -8,15 +8,15 @@ A Docker image to create data-only containers for [Dockerized Drupal](https://do
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -v /data \
-      dockerizedrupal/data:1.0.5
+      dockerizedrupal/data:1.1.0
       
 ## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-data.git "${TMP}" \
       && cd "${TMP}" \
-      $$ git checkout 1.0.5 \
-      && sudo docker build -t dockerizedrupal/data:1.0.5 . \
+      $$ git checkout 1.1.0 \
+      && sudo docker build -t dockerizedrupal/data:1.1.0 . \
       && cd -
 
 ## License

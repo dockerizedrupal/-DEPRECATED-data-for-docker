@@ -1,6 +1,8 @@
 # docker-data
 
-A Docker image that is used in the [Dockerized Drupal](https://dockerizedrupal.com/) project to create data-only containers.
+A Docker image to create data-only containers.
+
+This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.
 
 ## Run the container
 

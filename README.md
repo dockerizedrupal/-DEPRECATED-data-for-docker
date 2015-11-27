@@ -1,3 +1,7 @@
+# WARNING
+
+> **Notice:** *This project is deprecated. Read more about the reason why [here](https://github.com/dockerizedrupal/docker-data/issues/1).*
+
 # docker-data
 
 A Docker image to create data-only containers.

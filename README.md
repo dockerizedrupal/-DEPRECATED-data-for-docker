@@ -2,8 +2,6 @@
 
 > **Notice:** *This project is deprecated. Read more about the reason why [here](https://github.com/dockerizedrupal/-DEPRECATED-data-for-docker/issues/1).*
 
-> **Notice:** *This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.*
-
 # -DEPRECATED-data-for-docker
 
 A Docker image to create data-only containers.

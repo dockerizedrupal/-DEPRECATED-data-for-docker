@@ -1,5 +1,5 @@
 {
-  "name": "docker-data",
+  "name": "-DEPRECATED-data-for-docker",
   "version": "1.1.0",
   "dependencies": {
     "grunt": "^0.4.5",

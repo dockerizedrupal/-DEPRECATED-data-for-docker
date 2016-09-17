@@ -1,12 +1,12 @@
 # WARNING
 
-> **Notice:** *This project is deprecated. Read more about the reason why [here](https://github.com/dockerizedrupal/docker-data/issues/1).*
+> **Notice:** *This project is deprecated. Read more about the reason why [here](https://github.com/dockerizedrupal/-DEPRECATED-data-for-docker/issues/1).*
 
-# docker-data
+> **Notice:** *This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.*
+
+# -DEPRECATED-data-for-docker
 
 A Docker image to create data-only containers.
-
-This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.
 
 ## Run the container
 
@@ -19,7 +19,7 @@ This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) in
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone https://github.com/dockerizedrupal/docker-data.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/-DEPRECATED-data-for-docker.git "${TMP}" \
       && cd "${TMP}" \
       $$ git checkout 1.1.0 \
       && sudo docker build -t dockerizedrupal/data:1.1.0 . \
